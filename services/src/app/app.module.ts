@@ -7,6 +7,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import { CursoService } from './cursos/cursos.service';
 import { CriarCursoComponent } from './criar-curso/criar-curso.component';
 import { CursoCriadoComponent } from './curso-criado/curso-criado.component';
+import { LogService } from './shared/log.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { CursoCriadoComponent } from './curso-criado/curso-criado.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CursoService],
+  providers: [CursoService, LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
